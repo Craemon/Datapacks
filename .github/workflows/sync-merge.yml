@@ -3,7 +3,7 @@ name: Sync Shared Files to Datapack Branches
 on:
   push:
     branches:
-      - sync  # Runs only when pushing to the sync branch
+      - sync  # Runs when pushing to the "sync" branch
   workflow_dispatch:  # Allows manual execution from GitHub
 
 jobs:
@@ -22,25 +22,32 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-      - name: Fetch Branch List & Merge Sync
+      - name: Fetch all branches and sync
         run: |
-          git fetch origin  # Ensure all branches are visible
+          git fetch --all  # Ensures all branches are fetched from origin
 
-          # Get all branches EXCEPT `main` and `sync`
+          # List of all remote branches excluding `main` and `sync`
           BRANCHES=$(git branch -r | grep -Eo "origin/[^/]+" | sed 's/origin\///' | grep -vE '^(main|sync)$')
 
+          # Loop through each branch
           for branch in $BRANCHES; do
             echo "Merging sync into $branch..."
-            
-            # Checkout each branch
+
+            # Checkout the branch
             git checkout $branch
-            
-            # Pull latest changes for the current branch
-            git pull origin $branch
-            
+
+            # Pull the latest changes from the remote branch
+            git pull origin $branch --rebase  # Using rebase to avoid merge commits
+
             # Merge the sync branch into the current branch
-            git merge --no-edit origin/sync || echo "No new changes to merge"
-            
-            # Push the updated branch
+            git merge --no-edit origin/sync || echo "No new changes to merge or merge conflict detected"
+
+            # If there's a conflict, handle it automatically (you can also choose to exit early if conflicts are too complex)
+            if [ $? -ne 0 ]; then
+              echo "Merge conflict detected, skipping the branch: $branch"
+              continue
+            fi
+
+            # Push the updated branch back to origin
             git push origin $branch
           done
