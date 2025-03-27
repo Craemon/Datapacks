@@ -1,2 +1,0 @@
-# CraftingDatapacks
-Crafting Datapacks MegaRepo
