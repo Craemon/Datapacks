@@ -3,12 +3,12 @@ name: Sync Shared Files to Datapack Branches
 on:
   push:
     branches:
-      - sync  # Runs when pushing to the "sync" branch
+      - main  # Runs when pushing to the "sync" branch
   workflow_dispatch:  # Allows manual execution from GitHub
 
 jobs:
   merge-sync:
-    name: Merge Sync into Datapack Branches
+    name: Merge Main into Datapack Branches
     runs-on: ubuntu-latest
 
     steps:
@@ -26,8 +26,8 @@ jobs:
         run: |
           git fetch --all  # Ensures all branches are fetched from origin
 
-          # List of all remote branches excluding `main` and `sync`
-          BRANCHES=$(git branch -r | grep -Eo "origin/[^/]+" | sed 's/origin\///' | grep -vE '^(main|sync)$')
+          # List of all remote branches excluding `main`
+          BRANCHES=$(git branch -r | grep -Eo "origin/[^/]+" | sed 's/origin\///' | grep -vE '^(main)$')
 
           # Loop through each branch
           for branch in $BRANCHES; do
