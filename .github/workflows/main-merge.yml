@@ -26,18 +26,18 @@ jobs:
         run: |
           git fetch --all  # Ensures all branches are fetched from origin
 
-          # List of all remote branches excluding `main`
+          # List all remote branches excluding `main`
           BRANCHES=$(git branch -r | grep -Eo "origin/[^/]+" | sed 's/origin\///' | grep -vE '^(main)$')
 
           # Loop through each branch
           for branch in $BRANCHES; do
             echo "Merging main into $branch..."
 
-            # Checkout the branch
-            git checkout $branch
+            # Checkout the branch (ensuring we escape any special characters)
+            git checkout "$branch"
 
             # Pull the latest changes from the remote branch
-            git pull origin $branch --rebase  # Using rebase to avoid merge commits
+            git pull origin "$branch" --rebase  # Using rebase to avoid merge commits
 
             # Merge the main branch into the current branch
             git merge --no-edit origin/main || echo "No new changes to merge or merge conflict detected"
@@ -49,5 +49,5 @@ jobs:
             fi
 
             # Push the updated branch back to origin
-            git push origin $branch
+            git push origin "$branch"
           done
