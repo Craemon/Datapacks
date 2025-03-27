@@ -5,7 +5,7 @@ on:
     branches:
       - sync  # Runs only when pushing to the sync branch
   workflow_dispatch:  # Allows manual execution from GitHub
-  
+
 jobs:
   merge-sync:
     name: Merge Sync into Datapack Branches
@@ -31,7 +31,16 @@ jobs:
 
           for branch in $BRANCHES; do
             echo "Merging sync into $branch..."
+            
+            # Checkout each branch
             git checkout $branch
-            git merge --no-edit sync || echo "No new changes to merge"
+            
+            # Pull latest changes for the current branch
+            git pull origin $branch
+            
+            # Merge the sync branch into the current branch
+            git merge --no-edit origin/sync || echo "No new changes to merge"
+            
+            # Push the updated branch
             git push origin $branch
           done
