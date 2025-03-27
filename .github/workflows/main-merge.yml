@@ -3,11 +3,11 @@ name: Sync Shared Files to Datapack Branches
 on:
   push:
     branches:
-      - main  # Runs when pushing to the "sync" branch
+      - main  # Runs when pushing to the "main" branch
   workflow_dispatch:  # Allows manual execution from GitHub
 
 jobs:
-  merge-sync:
+  merge-main:
     name: Merge Main into Datapack Branches
     runs-on: ubuntu-latest
 
@@ -31,7 +31,7 @@ jobs:
 
           # Loop through each branch
           for branch in $BRANCHES; do
-            echo "Merging sync into $branch..."
+            echo "Merging main into $branch..."
 
             # Checkout the branch
             git checkout $branch
@@ -39,10 +39,10 @@ jobs:
             # Pull the latest changes from the remote branch
             git pull origin $branch --rebase  # Using rebase to avoid merge commits
 
-            # Merge the sync branch into the current branch
-            git merge --no-edit origin/sync || echo "No new changes to merge or merge conflict detected"
+            # Merge the main branch into the current branch
+            git merge --no-edit origin/main || echo "No new changes to merge or merge conflict detected"
 
-            # If there's a conflict, handle it automatically (you can also choose to exit early if conflicts are too complex)
+            # If there's a conflict, handle it automatically (you can choose to exit early if conflicts are too complex)
             if [ $? -ne 0 ]; then
               echo "Merge conflict detected, skipping the branch: $branch"
               continue
