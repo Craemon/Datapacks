@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - sync  # Runs only when pushing to the sync branch
-
+  workflow_dispatch:
+  
 jobs:
   merge-sync:
     name: Merge Sync into Datapack Branches
