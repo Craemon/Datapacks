@@ -1,8 +1,10 @@
 import os
 import shutil
 import zipfile
+import argparse
 
 def merge_folders(folder1, folder2, output_folder):
+    """Merge two folders into the output folder."""
     # Create the output folder if it doesn't exist
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -24,23 +26,39 @@ def merge_folders(folder1, folder2, output_folder):
             shutil.copy2(item_path, output_folder)
 
 def zip_folder(folder_path, zip_name):
+    """Zip the content of a folder into a zip file."""
     with zipfile.ZipFile(zip_name, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for root, dirs, files in os.walk(folder_path):
             for file in files:
                 zipf.write(os.path.join(root, file), os.path.relpath(os.path.join(root, file), folder_path))
 
 def main():
-    # Get the parent directory (one folder up from this script)
-    script_dir = os.path.dirname(os.path.realpath(__file__))
-    parent_dir = os.path.dirname(script_dir)
+    # Set up argument parsing
+    parser = argparse.ArgumentParser(description="Merge two folders and create a zip file.")
+    parser.add_argument('folder', help="Name of the non-common folder to merge.")
+    parser.add_argument('version', help="Version number to append to the zip file name.")
+    args = parser.parse_args()
 
-    # Define paths for the "common" and "craftable-tridents" folders
-    folder1 = os.path.join(parent_dir, 'common')
-    folder2 = os.path.join(parent_dir, 'craftable-tridents')
+    # Get the directory of the current script
+    script_dir = os.path.dirname(os.path.realpath(__file__))
+
+    # Define paths for the "common" folder and the folder provided as the non-common folder
+    folder1 = os.path.join(script_dir, 'common')  # Assuming 'common' is in the same directory as the script
+    folder2 = os.path.join(script_dir, args.folder)
+
+    # Ensure the 'common' folder exists
+    if not os.path.exists(folder1):
+        print(f"Error: 'common' folder not found in {script_dir}")
+        return
+
+    # Ensure the specified folder exists
+    if not os.path.exists(folder2):
+        print(f"Error: '{args.folder}' folder not found in {script_dir}")
+        return
 
     # Define the working directory and output folder
-    working_dir = os.path.join(parent_dir, 'working')
-    output_dir = os.path.join(parent_dir, 'output')
+    working_dir = os.path.join(script_dir, 'working')
+    output_dir = os.path.join(script_dir, 'output')
 
     # Ensure the working directory exists
     if not os.path.exists(working_dir):
@@ -51,7 +69,7 @@ def main():
         os.makedirs(output_dir)
 
     # Temporary folder for merging the contents, named after the non-common folder
-    temp_folder = os.path.join(working_dir, os.path.basename(folder2))
+    temp_folder = os.path.join(working_dir, args.folder)
 
     # Ensure the temporary folder exists
     if not os.path.exists(temp_folder):
@@ -61,8 +79,8 @@ def main():
         # Merge the folders into the temporary directory
         merge_folders(folder1, folder2, temp_folder)
 
-        # Define the zip file path, named after the non-common folder
-        zip_name = os.path.join(output_dir, f'{os.path.basename(folder2)}.zip')
+        # Define the zip file path, named after the non-common folder and version
+        zip_name = os.path.join(output_dir, f'{args.folder}-{args.version}.zip')
 
         # Zip the merged content
         zip_folder(temp_folder, zip_name)
