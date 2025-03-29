@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:copper_door"
+        },
+        "title": "Copper Door Cutting",
+        "description": "Adds recipes for all copper doors and trapdoors to the stonecutter!",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "craemon:crafting",
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

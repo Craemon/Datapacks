@@ -23,6 +23,7 @@ def main():
         'craftable-tridents',
         'craftable-rooted-dirt',
         'craftable-enchanted-golden-apples',
+        'copper-door-cutting',
         'craftable-chainmail'
         # Add new folders here when needed
     ]
