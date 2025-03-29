@@ -21,6 +21,7 @@ def main():
 
     folders = [
         'craftable-tridents',
+        'craftable-rooted_dirt',
         'craftable-chainmail'
         # Add new folders here when needed
     ]
