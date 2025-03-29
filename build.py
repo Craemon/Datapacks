@@ -90,7 +90,6 @@ def main():
         # Clean up the temporary folder after zipping
         if os.path.exists(temp_folder):
             shutil.rmtree(temp_folder)
-            print(f"Temporary folder {temp_folder} deleted.")
 
 if __name__ == '__main__':
     main()
