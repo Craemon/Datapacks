@@ -42,18 +42,18 @@ def main():
     # Get the directory of the current script
     script_dir = os.path.dirname(os.path.realpath(__file__))
 
-    # Define paths for the "common" folder and the folder provided as the non-common folder
+    # Define paths for the "common" folder and the folder provided as the non-common folder (inside the 'packs' folder)
     folder1 = os.path.join(script_dir, 'common')  # Assuming 'common' is in the same directory as the script
-    folder2 = os.path.join(script_dir, args.folder)
+    folder2 = os.path.join(script_dir, 'packs', args.folder)  # Now looking for the folder inside the 'packs' folder
 
     # Ensure the 'common' folder exists
     if not os.path.exists(folder1):
         print(f"Error: 'common' folder not found in {script_dir}")
         return
 
-    # Ensure the specified folder exists
+    # Ensure the specified folder inside 'packs' exists
     if not os.path.exists(folder2):
-        print(f"Error: '{args.folder}' folder not found in {script_dir}")
+        print(f"Error: '{args.folder}' folder not found in {os.path.join(script_dir, 'packs')}")
         return
 
     # Define the working directory and output folder
