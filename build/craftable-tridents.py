@@ -38,14 +38,41 @@ def main():
     folder1 = os.path.join(parent_dir, 'common')
     folder2 = os.path.join(parent_dir, 'craftable-tridents')
 
-    # Define the output folder and the zip file name
-    output_folder = os.path.join(parent_dir, 'merged_output')
-    zip_name = os.path.join(parent_dir, 'merged_output.zip')
+    # Define the working directory and output folder
+    working_dir = os.path.join(parent_dir, 'working')
+    output_dir = os.path.join(parent_dir, 'output')
 
-    # Merge the folders and zip the result
-    merge_folders(folder1, folder2, output_folder)
-    zip_folder(output_folder, zip_name)
-    print(f"Merged and zipped into {zip_name}")
+    # Ensure the working directory exists
+    if not os.path.exists(working_dir):
+        os.makedirs(working_dir)
+
+    # Ensure the output directory exists
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    # Temporary folder for merging the contents, named after the non-common folder
+    temp_folder = os.path.join(working_dir, os.path.basename(folder2))
+
+    # Ensure the temporary folder exists
+    if not os.path.exists(temp_folder):
+        os.makedirs(temp_folder)
+
+    try:
+        # Merge the folders into the temporary directory
+        merge_folders(folder1, folder2, temp_folder)
+
+        # Define the zip file path, named after the non-common folder
+        zip_name = os.path.join(output_dir, f'{os.path.basename(folder2)}.zip')
+
+        # Zip the merged content
+        zip_folder(temp_folder, zip_name)
+        print(f"Merged and zipped into {zip_name}")
+    
+    finally:
+        # Clean up the temporary folder after zipping
+        if os.path.exists(temp_folder):
+            shutil.rmtree(temp_folder)
+            print(f"Temporary folder {temp_folder} deleted.")
 
 if __name__ == '__main__':
     main()
