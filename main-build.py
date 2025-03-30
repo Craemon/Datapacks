@@ -25,6 +25,7 @@ def main():
         'craftable-enchanted-golden-apples',
         'copper-door-cutting',
         'craftable-horse-armor',
+        'craftable-elytra',
         'craftable-chainmail'
         # Add new folders here when needed
     ]

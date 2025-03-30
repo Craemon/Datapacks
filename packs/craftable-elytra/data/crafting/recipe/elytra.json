@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SNS",
+        "P P",
+        "P P"
+    ],
+    "key": {
+        "S": "minecraft:string",
+        "N": "minecraft:nether_star",
+        "P": "minecraft:phantom_membrane"
+    },
+    "result": {
+        "id": "minecraft:elytra",
+        "count": 1
+    }
+}
