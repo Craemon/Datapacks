@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:diamond_horse_armor"
+        },
+        "title": "Craftable Horse Armor",
+        "description": "Craft Horse Armor!",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "craemon:crafting",
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
