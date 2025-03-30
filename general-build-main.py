@@ -20,17 +20,7 @@ def main():
     args = parser.parse_args()
 
     folders = [
-        'craftable-tridents',
-        'craftable-rooted-dirt',
-        'craftable-enchanted-golden-apples',
-        'copper-door-cutting',
-        'craftable-horse-armor',
-        'craftable-elytra',
-        'craftable-nametags',
-        'craftable-tall-grass',
-        'craftable-bells',
-        'craftable-saddles',
-        'craftable-chainmail'
+        
         # Add new folders here when needed
     ]
     
