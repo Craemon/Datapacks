@@ -27,6 +27,7 @@ def main():
         'craftable-horse-armor',
         'craftable-elytra',
         'craftable-nametags',
+        'craftable-tall-grass',
         'craftable-chainmail'
         # Add new folders here when needed
     ]
