@@ -26,7 +26,7 @@ def main():
         'copper-door-cutting',
         'craftable-horse-armor',
         'craftable-elytra',
-        'craftable-nametag',
+        'craftable-nametags',
         'craftable-chainmail'
         # Add new folders here when needed
     ]
