@@ -1,4 +1,4 @@
 # Craftable Bells
 Adds a crafting recipe for bells!
 
-![crafting](https://github.com/Craemon/Craftable-Bells/assets/121398546/28ddced8-4dcd-4097-a5eb-e18e1a5549fc)
+![recipe](https://github.com/user-attachments/assets/c746aa7b-afa2-490b-9788-cf14a6fde964)
