@@ -1,4 +1,4 @@
 # Craftable Nametags
 Allows you to craft nametags!
 
-![crafting-grid-wborder](https://github.com/Craemon/Craftable-Nametags/assets/121398546/2411f7b3-6e5b-476e-8e00-9b3f2f0e0585)
+![recipe](https://github.com/user-attachments/assets/f6475edd-bdbd-4553-9e34-2822a268301a)
