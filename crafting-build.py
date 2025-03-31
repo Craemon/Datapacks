@@ -52,7 +52,7 @@ def main():
 
     # Define paths for the "common" folder and the folder provided as the non-common folder (inside the 'packs' folder)
     folder1 = os.path.join(script_dir, 'common')
-    folder2 = os.path.join(script_dir, 'packs', args.folder)
+    folder2 = os.path.join(script_dir, 'crafting-packs', args.folder)
     folder3 = os.path.join(script_dir, 'crafting-common')
 
     # Ensure the 'common' folder exists
