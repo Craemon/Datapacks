@@ -20,7 +20,7 @@ def main():
     args = parser.parse_args()
 
     folders = [
-        
+        'players-drop-heads'
         # Add new folders here when needed
     ]
     
