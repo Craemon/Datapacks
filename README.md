@@ -5,6 +5,11 @@ This repository includes most of my datapacks. This is done to reduce the insane
 
 ### General Datapacks:
 - Players Drop Heads
+- Unlock All Recipes
+    - Normal Version
+    - Datapack Safe Version
+    - Minelife Version
+
 
 
 ### Crafting Datapacks:

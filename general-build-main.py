@@ -20,7 +20,10 @@ def main():
     args = parser.parse_args()
 
     folders = [
-        'players-drop-heads'
+        'players-drop-heads',
+        'unlock-all-recipes',
+        'unlock-all-recipes-datapack-safe',
+        'unlock-all-recipes-minelife'
         # Add new folders here when needed
     ]
     
