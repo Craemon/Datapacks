@@ -23,7 +23,8 @@ def main():
         'players-drop-heads',
         'unlock-all-recipes',
         'unlock-all-recipes-datapack-safe',
-        'unlock-all-recipes-minelife'
+        'unlock-all-recipes-minelife',
+        'nether-ratio-2:1'
         # Add new folders here when needed
     ]
     

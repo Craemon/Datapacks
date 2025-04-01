@@ -9,7 +9,7 @@ This repository includes most of my datapacks. This is done to reduce the insane
     - Normal Version
     - Datapack Safe Version
     - Minelife Version
-
+- Nether Ratio 2:1
 
 
 ### Crafting Datapacks:
