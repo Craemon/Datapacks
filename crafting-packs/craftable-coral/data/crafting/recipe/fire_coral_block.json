@@ -1,0 +1,45 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "building",
+    "ingredients": [
+      [
+        "minecraft:fire_coral",
+        "minecraft:fire_coral_fan"
+      ],
+      [
+        "minecraft:fire_coral",
+        "minecraft:fire_coral_fan"
+      ],
+      [
+        "minecraft:fire_coral",
+        "minecraft:fire_coral_fan"
+      ],
+      [
+        "minecraft:fire_coral",
+        "minecraft:fire_coral_fan"
+      ],
+      [
+        "minecraft:fire_coral",
+        "minecraft:fire_coral_fan"
+      ],
+      [
+        "minecraft:fire_coral",
+        "minecraft:fire_coral_fan"
+      ],
+      [
+        "minecraft:fire_coral",
+        "minecraft:fire_coral_fan"
+      ],
+      [
+        "minecraft:fire_coral",
+        "minecraft:fire_coral_fan"
+      ],
+      [
+        "minecraft:fire_coral",
+        "minecraft:fire_coral_fan"
+      ]
+    ],
+    "result": {
+      "id": "minecraft:fire_coral_block"
+    }
+  }
