@@ -1,0 +1,19 @@
+{
+  "display": {
+      "icon": {
+          "item": "minecraft:player_head",
+          "nbt": "{SkullOwner:{Id:[I;1151667548,-364488984,-1466567652,856464823],Properties:{textures:[{Value:\"e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdlMjZhNDcyMWYwNjllMzUwYTQwZDExMDM3OTk3ZDliYjRiZWUzNGU1MTM3ODQ0ZDA2NDU5ODg5MzUyYzZiYiJ9fX0=\"}]}}}"
+      },
+      "title": "Craemon's Datapacks",
+      "description": "https://modrinth.com/user/Craemon",
+      "background": "minecraft:textures/block/cyan_concrete.png",
+      "frame": "challenge",
+      "show_toast": false,
+      "announce_to_chat": false
+  },
+  "criteria": {
+      "tick": {
+          "trigger": "minecraft:tick"
+      }
+  }
+}

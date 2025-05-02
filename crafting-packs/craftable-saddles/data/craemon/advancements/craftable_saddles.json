@@ -1,15 +1,15 @@
 {
     "display": {
         "icon": {
-            "id": "minecraft:knowledge_book"
+            "item": "minecraft:saddle"
         },
-        "title": "Unlock all Recipes",
-        "description": "Automatically grants you every recipe!",
+        "title": "Craftable Saddle",
+        "description": "Craft Saddles!",
         "frame": "task",
         "show_toast": false,
         "announce_to_chat": false
     },
-    "parent": "craemon:main",
+    "parent": "craemon:crafting",
     "criteria": {
         "tick": {
             "trigger": "minecraft:tick"
