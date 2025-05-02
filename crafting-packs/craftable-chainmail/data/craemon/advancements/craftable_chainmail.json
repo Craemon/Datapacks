@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "id": "minecraft:chainmail_chestplate"
+            "item": "minecraft:chainmail_chestplate"
         },
         "title": "Craftable Chainmail",
         "description": "Craft Chainmail from Chains!",

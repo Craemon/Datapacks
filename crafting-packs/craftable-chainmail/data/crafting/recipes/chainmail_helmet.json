@@ -1,14 +1,16 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "# #",
+        "###",
         "# #"
     ],
     "key": {
-        "#": "minecraft:chain"
+        "#": {
+            "item": "minecraft:chain"
+        }
     },
     "result": {
-        "id": "minecraft:chainmail_boots",
+        "item": "minecraft:chainmail_helmet",
         "count": 1
     }
 }

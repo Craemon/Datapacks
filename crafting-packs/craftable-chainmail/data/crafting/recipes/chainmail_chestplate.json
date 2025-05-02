@@ -6,10 +6,12 @@
         "###"
     ],
     "key": {
-        "#": "minecraft:chain"
+        "#": {
+            "item": "minecraft:chain"
+        }
     },
     "result": {
-        "id": "minecraft:chainmail_chestplate",
+        "item": "minecraft:chainmail_chestplate",
         "count": 1
     }
 }
