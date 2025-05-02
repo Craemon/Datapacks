@@ -15,7 +15,8 @@ This repository includes most of my datapacks. This is done to reduce the insane
 - Copper Door Cutting (Not on 1.20.1 backport yet)
 - Craftable Bells
 - Craftable Chainmail
-- Craftable Elytra (Not on 1.20.1 backport yet)
+- Craftable Coral (Not on 1.20.1 backport yet)
+- Craftable Elytra
 - Craftable Enchanted Golden Apples (Not on 1.20.1 backport yet)
 - Craftable Horse Armor (Not on 1.20.1 backport yet)
 - Craftable Nametags (Not on 1.20.1 backport yet)
