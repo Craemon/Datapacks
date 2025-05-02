@@ -20,6 +20,6 @@ This repository includes most of my datapacks. This is done to reduce the insane
 - Craftable Horse Armor (Not on 1.20.1 backport yet)
 - Craftable Nametags (Not on 1.20.1 backport yet)
 - Craftable Rooted Dirt (Not on 1.20.1 backport yet)
-- Craftable Saddles (Not on 1.20.1 backport yet)
+- Craftable Saddles
 - Craftable Tall Grass(and Fern) (Not on 1.20.1 backport yet)
 - Craftable Tridents (Not on 1.20.1 backport yet)

@@ -17,7 +17,7 @@
         }
     },
     "result": {
-        "id": "minecraft:saddle",
+        "item": "minecraft:saddle",
         "count": 1
     }
 }
