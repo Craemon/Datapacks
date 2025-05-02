@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "id": "minecraft:bell"
+            "item": "minecraft:bell"
         },
         "title": "Craftable Bells",
         "description": "Craft Bells!",
