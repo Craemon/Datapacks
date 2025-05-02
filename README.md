@@ -4,23 +4,22 @@ This repository includes most of my datapacks. This is done to reduce the insane
 ## Content:
 
 ### General Datapacks:
-- Players Drop Heads
+- Players Drop Heads (Not on 1.20.1 backport yet)
 - Unlock All Recipes
     - Normal Version
-    - Datapack Safe Version
-    - Minelife Version
-- Nether Ratio 2:1
+    - Datapack Safe Version (Not on 1.20.1 backport yet)
+- Nether Ratio 2:1 (Not on 1.20.1 backport yet)
 
 
 ### Crafting Datapacks:
-- Copper Door Cutting
-- Craftable Bells
-- Craftable Chainmail
-- Craftable Elytra
-- Craftable Enchanted Golden Apples
-- Craftable Horse Armor
-- Craftable Nametags
-- Craftable Rooted Dirt
-- Craftable Saddles
-- Craftable Tall Grass(and Fern)
-- Craftable Tridents
+- Copper Door Cutting (Not on 1.20.1 backport yet)
+- Craftable Bells (Not on 1.20.1 backport yet)
+- Craftable Chainmail (Not on 1.20.1 backport yet)
+- Craftable Elytra (Not on 1.20.1 backport yet)
+- Craftable Enchanted Golden Apples (Not on 1.20.1 backport yet)
+- Craftable Horse Armor (Not on 1.20.1 backport yet)
+- Craftable Nametags (Not on 1.20.1 backport yet)
+- Craftable Rooted Dirt (Not on 1.20.1 backport yet)
+- Craftable Saddles (Not on 1.20.1 backport yet)
+- Craftable Tall Grass(and Fern) (Not on 1.20.1 backport yet)
+- Craftable Tridents (Not on 1.20.1 backport yet)
