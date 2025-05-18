@@ -22,6 +22,7 @@ def main():
     folders = [
         'craftable-tridents',
         'craftable-rooted-dirt',
+        'craftable-coral',
         'craftable-enchanted-golden-apples',
         'copper-door-cutting',
         'craftable-horse-armor',
@@ -30,7 +31,8 @@ def main():
         'craftable-tall-grass',
         'craftable-bells',
         'craftable-saddles',
-        'craftable-chainmail'
+        'craftable-chainmail',
+        'craftable-budding-amethyst'
         # Add new folders here when needed
     ]
     
