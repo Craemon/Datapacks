@@ -13,7 +13,7 @@ This repository includes most of my datapacks. This is done to reduce the insane
 
 
 ### Crafting Datapacks:
--Craftable Budding Amethyst
+- Craftable Budding Amethyst
 - Copper Door Cutting
 - Craftable Bells
 - Craftable Chainmail
@@ -22,7 +22,6 @@ This repository includes most of my datapacks. This is done to reduce the insane
 - Craftable Horse Armor
 - Craftable Nametags
 - Craftable Rooted Dirt
-- Craftable Saddles
 - Craftable Tall Grass(and Fern)
 - Craftable Tridents
 - Craftable Coral
