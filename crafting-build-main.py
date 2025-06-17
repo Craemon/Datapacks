@@ -30,7 +30,6 @@ def main():
         'craftable-nametags',
         'craftable-tall-grass',
         'craftable-bells',
-        'craftable-saddles',
         'craftable-chainmail',
         'craftable-budding-amethyst'
         # Add new folders here when needed
