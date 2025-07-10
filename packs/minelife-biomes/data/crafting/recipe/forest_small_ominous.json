@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ominous_bottle",
+    "minecraft:diamond",
+    "minecraft:oak_sapling"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "custom_biomes:forest_ominous",
+        "BiomeSize": "Small"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:forest_small_ominous",
+      "minecraft:custom_name": {
+        "text": "Small Ominous Bottle of Forest",
+        "color": "#4a7729",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

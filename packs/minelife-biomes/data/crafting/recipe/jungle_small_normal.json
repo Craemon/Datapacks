@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:diamond",
+    "minecraft:jungle_sapling"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "minecraft:jungle",
+        "BiomeSize": "Small"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:jungle_small_normal",
+      "minecraft:custom_name": {
+        "text": "Small Bottle of Jungle",
+        "color": "#3a8b48",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ominous_bottle",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:jungle_sapling"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "custom_biomes:jungle_ominous",
+        "BiomeSize": "Medium"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:jungle_medium_ominous",
+      "minecraft:custom_name": {
+        "text": "Medium Ominous Bottle of Jungle",
+        "color": "#3a8b48",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

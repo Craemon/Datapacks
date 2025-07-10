@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ominous_bottle",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:cactus"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "custom_biomes:desert_ominous",
+        "BiomeSize": "Medium"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:desert_medium_ominous",
+      "minecraft:custom_name": {
+        "text": "Medium Ominous Bottle of Desert",
+        "color": "#e5da87",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

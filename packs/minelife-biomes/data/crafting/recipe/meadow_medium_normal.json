@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:cornflower"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "minecraft:meadow",
+        "BiomeSize": "Medium"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:meadow_medium_normal",
+      "minecraft:custom_name": {
+        "text": "Medium Bottle of Meadow",
+        "color": "#75c6a4",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

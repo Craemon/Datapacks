@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:snow"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "minecraft:grove",
+        "BiomeSize": "Medium"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:grove_medium_normal",
+      "minecraft:custom_name": {
+        "text": "Medium Bottle of Grove",
+        "color": "#f0f0f0",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

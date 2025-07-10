@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:ice"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "minecraft:frozen_river",
+        "BiomeSize": "Large"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:frozen_river_large_normal",
+      "minecraft:custom_name": {
+        "text": "Large Bottle of Frozen River",
+        "color": "#a0d7e9",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

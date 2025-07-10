@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ominous_bottle",
+    "minecraft:diamond_block",
+    "minecraft:mangrove_propagule"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "custom_biomes:mangrove_swamp_ominous",
+        "BiomeSize": "Giant"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:mangrove_swamp_giant_ominous",
+      "minecraft:custom_name": {
+        "text": "Giant Ominous Bottle of Mangrove Swamp",
+        "color": "#5e2e1c",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

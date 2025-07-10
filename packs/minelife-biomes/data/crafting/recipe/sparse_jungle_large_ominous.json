@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ominous_bottle",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:bamboo"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "custom_biomes:sparse_jungle_ominous",
+        "BiomeSize": "Large"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:sparse_jungle_large_ominous",
+      "minecraft:custom_name": {
+        "text": "Large Ominous Bottle of Sparse Jungle",
+        "color": "#6aa84f",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

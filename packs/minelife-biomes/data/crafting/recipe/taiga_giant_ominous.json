@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ominous_bottle",
+    "minecraft:diamond_block",
+    "minecraft:spruce_sapling"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "custom_biomes:taiga_ominous",
+        "BiomeSize": "Giant"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:taiga_giant_ominous",
+      "minecraft:custom_name": {
+        "text": "Giant Ominous Bottle of Taiga",
+        "color": "#6c9a53",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

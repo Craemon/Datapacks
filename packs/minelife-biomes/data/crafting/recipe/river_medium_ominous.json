@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ominous_bottle",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:salmon"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "custom_biomes:river_ominous",
+        "BiomeSize": "Medium"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:river_medium_ominous",
+      "minecraft:custom_name": {
+        "text": "Medium Ominous Bottle of River",
+        "color": "#3b8baf",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

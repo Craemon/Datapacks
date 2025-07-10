@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:dark_oak_sapling"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "minecraft:dark_forest",
+        "BiomeSize": "Large"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:dark_forest_large_normal",
+      "minecraft:custom_name": {
+        "text": "Large Bottle of Dark Forest",
+        "color": "#40521d",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:diamond_block",
+    "minecraft:bush"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "minecraft:plains",
+        "BiomeSize": "Giant"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:plains_giant_normal",
+      "minecraft:custom_name": {
+        "text": "Giant Bottle of Plains",
+        "color": "#7fb238",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:diamond_block",
+    "minecraft:bamboo"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "minecraft:sparse_jungle",
+        "BiomeSize": "Giant"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:sparse_jungle_giant_normal",
+      "minecraft:custom_name": {
+        "text": "Giant Bottle of Sparse Jungle",
+        "color": "#6aa84f",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

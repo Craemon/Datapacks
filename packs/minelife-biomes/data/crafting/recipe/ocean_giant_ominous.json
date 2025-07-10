@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ominous_bottle",
+    "minecraft:diamond_block",
+    "minecraft:kelp"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "custom_biomes:ocean_ominous",
+        "BiomeSize": "Giant"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:ocean_giant_ominous",
+      "minecraft:custom_name": {
+        "text": "Giant Ominous Bottle of Ocean",
+        "color": "#1b4d8b",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

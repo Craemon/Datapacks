@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:oak_sapling"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "minecraft:forest",
+        "BiomeSize": "Medium"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:forest_medium_normal",
+      "minecraft:custom_name": {
+        "text": "Medium Bottle of Forest",
+        "color": "#4a7729",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}
