@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ominous_bottle",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:red_sand"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "custom_biomes:badlands_ominous",
+        "BiomeSize": "Huge"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:badlands_huge_ominous",
+      "minecraft:custom_name": {
+        "text": "Huge Ominous Bottle of Badlands",
+        "color": "#d67f33",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

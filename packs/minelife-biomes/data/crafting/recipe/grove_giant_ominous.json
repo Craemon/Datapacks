@@ -4,7 +4,11 @@
   "category": "misc",
   "ingredients": [
     "minecraft:ominous_bottle",
-    "minecraft:diamond_block",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
     "minecraft:snow"
   ],
   "result": {

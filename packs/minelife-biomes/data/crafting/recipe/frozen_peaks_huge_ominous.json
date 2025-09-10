@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ominous_bottle",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:packed_ice"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "custom_biomes:frozen_peaks_ominous",
+        "BiomeSize": "Huge"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:frozen_peaks_huge_ominous",
+      "minecraft:custom_name": {
+        "text": "Huge Ominous Bottle of Frozen Peaks",
+        "color": "#cce9f7",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}

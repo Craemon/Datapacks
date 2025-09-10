@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "Biome Bottles",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ominous_bottle",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:oak_sapling"
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:custom_data": {
+        "StoredBiome": "custom_biomes:forest_ominous",
+        "BiomeSize": "Huge"
+      },
+      "minecraft:item_model": "biome_in_a_bottle:forest_huge_ominous",
+      "minecraft:custom_name": {
+        "text": "Huge Ominous Bottle of Forest",
+        "color": "#4a7729",
+        "bold": true
+      }
+    },
+    "count": 1
+  }
+}
