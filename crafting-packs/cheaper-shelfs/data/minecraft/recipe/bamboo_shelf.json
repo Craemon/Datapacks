@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "LLL",
+        "   ",
+        "LLL"
+    ],
+    "key": {
+        "L": "minecraft:stripped_bamboo_block"
+    },
+    "result": {
+        "id": "minecraft:bamboo_shelf",
+        "count": 12
+    }
+}

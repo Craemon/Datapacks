@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "LLL",
+        "   ",
+        "LLL"
+    ],
+    "key": {
+        "L": "minecraft:stripped_oak_log"
+    },
+    "result": {
+        "id": "minecraft:oak_shelf",
+        "count": 12
+    }
+}

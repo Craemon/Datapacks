@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "LLL",
+        "   ",
+        "LLL"
+    ],
+    "key": {
+        "L": "minecraft:stripped_mangrove_log"
+    },
+    "result": {
+        "id": "minecraft:mangrove_shelf",
+        "count": 12
+    }
+}

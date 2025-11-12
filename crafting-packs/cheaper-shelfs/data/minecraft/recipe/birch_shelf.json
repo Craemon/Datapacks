@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "LLL",
+        "   ",
+        "LLL"
+    ],
+    "key": {
+        "L": "minecraft:stripped_birch_log"
+    },
+    "result": {
+        "id": "minecraft:birch_shelf",
+        "count": 12
+    }
+}
