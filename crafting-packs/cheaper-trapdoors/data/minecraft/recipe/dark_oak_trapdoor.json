@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "wooden_trapdoor",
+    "pattern": [
+        "PPP",
+        "PPP"
+    ],
+    "key": {
+        "P": "minecraft:dark_oak_planks"
+    },
+    "result": {
+        "id": "minecraft:dark_oak_trapdoor",
+        "count": 8
+    }
+}

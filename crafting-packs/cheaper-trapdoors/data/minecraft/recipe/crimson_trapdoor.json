@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "wooden_trapdoor",
+    "pattern": [
+        "PPP",
+        "PPP"
+    ],
+    "key": {
+        "P": "minecraft:crimson_planks"
+    },
+    "result": {
+        "id": "minecraft:crimson_trapdoor",
+        "count": 8
+    }
+}
